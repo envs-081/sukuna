@@ -72,7 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ* {}, 🥀
+*ʜᴇʏ* {}, ⚡
 
 *๏ ᴛʜɪs ɪs* {} !
 ➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
@@ -89,15 +89,15 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="𝐇𝐄𝐋𝐏𝐒 & 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒⚡", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="𝐊𝐍𝐎𝐖 𝐌𝐎𝐑𝐄⚡", callback_data="fallen_"),
-        InlineKeyboardButton(text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓⚡", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="ᴋɴᴏᴡ ᴍᴏʀᴇ", callback_data="fallen_"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="𝐌𝐘 𝐌𝐀𝐒𝐓𝐄𝐑⚡", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="𝐒𝐎𝐔𝐑𝐂𝐄⚡", callback_data="source_"),
+        InlineKeyboardButton(text="ᴍʏ ᴍᴀsᴛᴇʀ", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", callback_data="source_"),
     ],
 ]
 
@@ -204,7 +204,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgUAAx0CfzxeGgABBIDrZ5XgRDF-KcOvLOteSscpVNYQEcYAAhQKAAI_FNlWrOULLTLRpk8eBA"
+                "CAACAgUAAyEFAASK2jrWAAEB0_JnlkeziqlClqDtJBSEUViphBY3AQACHAwAAojD2FbjeRw56heysB4E"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -367,18 +367,18 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓⚡", callback_data="fallen_support"
+                            text="sᴜᴘᴘᴏʀᴛ", callback_data="fallen_support"
                         ),
                         InlineKeyboardButton(
-                            text="𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒⚡", callback_data="help_back"
+                            text="ᴄᴏᴍᴍᴀɴᴅ⚡", callback_data="help_back"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="𝐒𝐔𝐁𝐁𝐔⚡", url=f"tg://user?id={OWNER_ID}"
+                            text="㊝┊𝐙ᴇɴɪᴛꜱᴜ", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="𝐒𝐎𝐔𝐑𝐂𝐄⚡",
+                            text="sᴏᴜʀᴄᴇ",
                             callback_data="source_",
                         ),
                     ],
@@ -397,18 +397,18 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝐒𝐔𝐏𝐏𝐎𝐑𝐓⚡", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="𝐔𝐏𝐃𝐀𝐓𝐄𝐒⚡", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="𝐒𝐔𝐁𝐁𝐔⚡", url=f"tg://user?id={OWNER_ID}"
+                            text="㊝┊𝐙ᴇɴɪᴛꜱᴜ", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="𝐍𝐇𝐈 𝐃𝐔𝐆𝐀⚡",
+                            text="sᴏᴏ ᴊᴀᴏ",
                             url="https://t.me/hewasSUBBU",
                         ),
                     ],
