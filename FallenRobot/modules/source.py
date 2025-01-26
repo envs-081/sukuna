@@ -17,7 +17,7 @@ async def repo(_, message: Message):
 
 ɪ ᴀᴍ [{BOT_NAME}](https://t.me/{BOT_USERNAME})**
 
-**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ :** 𝐋𝐎𝐑𝐃 𝐒𝐔𝐁𝐁𝐔⚡
+**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ :** ㊝┊𝐙ᴇɴɪᴛꜱᴜ⚡
 **» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
 **» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
 **» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
@@ -26,10 +26,10 @@ async def repo(_, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑⚡", user_id=OWNER_ID),
+                    InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", user_id=OWNER_ID),
                     InlineKeyboardButton(
-                        "𝐊𝐍𝐎𝐖 𝐒𝐔𝐁𝐁𝐔⚡",
-                        url="https://t.me/hewasSUBBU",
+                        "sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ",
+                        url="https://t.me/hxh_bot_support",
                     ),
                 ]
             ]
